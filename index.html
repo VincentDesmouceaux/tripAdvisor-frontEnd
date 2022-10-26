@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
-
+    <script
+      src="https://kit.fontawesome.com/a396ff75e9.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Trip Advisor frontend</title>
   </head>
+
   <body>
     <header class="container">
-      <header class="menuheader">
-        <img src="/assets/img/logo.svg" alt="logo-tripadvisor" />
-
-        <ul>
-          <li class="pill">Avis</li>
-          <li class="pill">Voyage</li>
-          <li class="pill">Alertes</li>
-          <li class="pill"><span class="login"> Connectez vous </span></li>
-        </ul>
-      </header>
+      <img src="/assets/img/logo.svg" alt="logo-tripadvisor" />
+      <nav class="primary-nav">
+        <div class="menu-item">
+          <i class="fa-solid fa-pen"></i><span>Avis</span>
+        </div>
+        <div class="menu-item">
+          <i class="fa-regular fa-heart"></i><span>Voyage</span>
+        </div>
+        <div class="menu-item">
+          <i class="fa-regular fa-bell"></i><span>Alertes</span>
+        </div>
+        <button>Connectez-vous</button>
+      </nav>
     </header>
 
     <main></main>
