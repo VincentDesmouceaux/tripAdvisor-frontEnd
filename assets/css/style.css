@@ -1,11 +1,11 @@
 body {
-  font-family: "TripSans-Regular";
+  font-family: "Trip Sans Medium";
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  background: lavender;
+  background: rgb(255, 255, 255);
 }
 
 header {
@@ -20,12 +20,13 @@ header img {
 .primary-nav {
   display: flex;
   align-items: center;
-  gap: 30px;
-  font-family: "TripSans-Medium";
+  gap: 15px;
+  font-family: "Trip Sans ";
+  cursor: pointer;
 }
 
 .primary-nav .menu-item {
-  /* background: red; */
+  display: flex;
   padding: 15px;
 }
 
@@ -37,4 +38,137 @@ header img {
   border-radius: 20px;
   cursor: pointer;
   border: none;
+}
+
+h1 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 54px;
+  font-family: "Trip Sans Medium";
+  font-weight: bolder;
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.secondary-nav {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.secondary-nav p {
+  flex: 1;
+  height: 40px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.images {
+  margin-top: 50px;
+  height: 400px;
+  display: flex;
+  gap: 2px;
+}
+
+.images .left {
+  flex: 4;
+
+  background-image: url("../img/caption1.jpg");
+}
+
+.images .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.images .right-top {
+  background-image: url("../img/caption2.jpg");
+  flex: 1;
+}
+
+.images .right-bottom {
+  /* background: yellow; */
+  background-image: url("../img/caption3.jpg");
+  flex: 1;
+}
+
+.images .center-background {
+  background-size: cover;
+  background-position: center;
+}
+
+.petit-texte {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 10px;
+  font-family: "Trip Sans Medium";
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-family: "Trip Sans Medium";
+}
+
+.grand-texte {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  height: 100px;
+  display: flex;
+  gap: 2px;
+}
+.textcorpus {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: "comics";
+  font-weight: 100;
+}
+
+.grand-texte .gdleft {
+  flex: 1;
+}
+
+.grand-texte .gdright {
+  flex: 1;
+}
+
+footer {
+  padding-right: 80px;
+
+  display: flex;
+  justify-content: center;
+  justify-content: space space-around;
+}
+
+footer img {
+  width: 40px;
+  padding-right: 20px;
+}
+
+footer h3 {
+  align-self: center;
+  padding-right: 280px;
+  font-size: smaller;
+}
+
+.footercolor {
+  display: flex;
+  background: #faf1ed;
 }
