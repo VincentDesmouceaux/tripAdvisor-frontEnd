@@ -3,13 +3,19 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1024px;
   margin: 0 auto;
+  background: red;
 }
 
 header {
+  height: 70px;
   display: flex;
   justify-content: space-between;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
 }
 
 header img {
@@ -40,7 +46,7 @@ header img {
 }
 
 h1 {
-  margin-top: 25px;
+  margin-top: 70px;
   margin-bottom: 15px;
   font-size: 54px;
   font-family: "Trip Sans Medium";
@@ -154,9 +160,7 @@ h2 {
 }
 
 .carousel-title {
-  display: flex;
   flex: 1;
-  background: salmon;
 }
 
 .main-title {
@@ -192,7 +196,6 @@ h2 {
 }
 
 .carousel-scroll-item:nth-child(odd) {
-  background: lightblue;
 }
 
 .img-container {
@@ -248,4 +251,19 @@ footer h3 {
 
 .footercolor {
   background: #faf1ed;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: yellow;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    background-color: purple;
+  }
 }
