@@ -5,7 +5,6 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  background: red;
 }
 
 .header {
@@ -17,6 +16,7 @@ body {
   top: 0;
   position: fixed;
   background: white;
+  border-bottom: 1px solid red;
 }
 
 .header .hidden {
@@ -349,7 +349,7 @@ footer h3 {
   }
 
   .images .left {
-    margin: 0 -20px;
+    margin: 1px;
   }
   .description {
     width: 100%;
