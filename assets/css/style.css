@@ -3,12 +3,12 @@ body {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1140px;
   margin: 0 auto;
   background: red;
 }
 
-header {
+.header {
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -16,6 +16,11 @@ header {
   right: 0;
   top: 0;
   position: fixed;
+  background: white;
+}
+
+.header .hidden {
+  display: none;
 }
 
 header img {
@@ -78,6 +83,16 @@ p {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-nav .hidden {
+  display: none;
+}
+
+.secondary-nav p:hover {
+  background: black;
+  color: white;
 }
 
 .images {
@@ -132,26 +147,13 @@ h2 {
   font-family: "Trip Sans Medium";
 }
 
-.grand-texte {
-  margin-top: 50px;
-  margin-bottom: 70px;
-  height: 100px;
-  display: flex;
-  gap: 2px;
-}
-.textcorpus {
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-family: "comics";
-  font-weight: 100;
-}
-
-.grand-texte .gdleft {
-  flex: 1;
-}
-
-.grand-texte .gdright {
-  flex: 1;
+.description {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 22px;
+  color: #333333;
+  /* border: solid black 2px; */
+  width: 50%;
 }
 
 .carousel {
@@ -165,16 +167,27 @@ h2 {
 
 .main-title {
   font-size: larger;
+  margin-top: 50px;
 }
 .main-title2 {
   font-size: larger;
   font-style: oblique;
+  margin-top: 50px;
 }
 .note {
   font-size: smaller;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  justify-content: flex-start;
 }
+
+.reduc {
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .second-title {
   font-size: smaller;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -253,17 +266,96 @@ footer h3 {
   background: #faf1ed;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1140px) {
+  body {
+    /* background-color: orange; */
+  }
+
   .container {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    background: yellow;
+    margin: 0 20px;
+  }
+
+  .menu-item span {
+    display: none;
+    padding: 10px;
+  }
+
+  .secondary-nav {
+    flex-wrap: wrap;
+    /* gap: 0; */
+  }
+
+  .secondary-nav .hidden {
+    display: flex;
+  }
+
+  .secondary-nav p {
+    box-sizing: border-box;
+    flex: calc(25% - 15px);
+    height: auto;
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-  .container {
-    background-color: purple;
+@media (max-width: 1024px) {
+  body {
+    /* background-color: lightgreen; */
+  }
+
+  .menu-item {
+    display: none;
+  }
+  .images {
+    height: 300px;
+  }
+
+  .carousel-scroll-item {
+    flex: calc((100% / 2) - 10px);
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    /* background-color: lightskyblue; */
+  }
+
+  .header {
+    align-items: center;
+  }
+
+  .header .hidden {
+    display: block;
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .secondary-nav {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .secondary-nav p {
+    flex-shrink: 0;
+  }
+
+  .images {
+    margin-top: 20px;
+  }
+
+  .images .right {
+    display: none;
+  }
+
+  .images .left {
+    margin: 0 -20px;
+  }
+  .description {
+    width: 100%;
+  }
+
+  .carousel {
+    display: block;
   }
 }
