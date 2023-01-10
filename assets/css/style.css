@@ -16,7 +16,6 @@ body {
   top: 0;
   position: fixed;
   background: white;
-  border-bottom: 1px solid red;
 }
 
 .header .hidden {
