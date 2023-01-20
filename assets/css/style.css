@@ -256,7 +256,7 @@ footer img {
 }
 
 footer h3 {
-  align-self: center;
+  align-items: center;
   padding-right: 280px;
   font-size: smaller;
 }
@@ -361,5 +361,11 @@ footer h3 {
   .footer {
     display: flex;
     flex-direction: row;
+  }
+
+  footer h3 {
+    align-items: center;
+
+    font-size: smaller;
   }
 }
